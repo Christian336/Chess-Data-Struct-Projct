@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>{{ saida }}</h2>
+    <img src="{{ url_for('static', filename = 'grafo.jpg' )}}">
+    <form action="/home" method="post">
+        lance: <input type="text" name="lance">
+        <input type="text" name="lances_feitos" value="{{lances_feitos}}" hidden>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
